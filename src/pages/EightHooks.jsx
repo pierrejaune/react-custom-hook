@@ -10,7 +10,7 @@ import {
 import MyCodeContext from '../main';
 
 import SomeChild from '../components/SomeChild';
-import UseLocalStorage from '../components/UseLocalStorage';
+import UseLocalStorage from '../components/UseLocalStorage'; // ✅ 大文字と統一
 
 // *useReducerの第一引数で使用するreducer
 const reducer = (state, action) => {
