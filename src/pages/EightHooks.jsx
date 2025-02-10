@@ -10,7 +10,7 @@ import {
 import MyCodeContext from '../main';
 
 import SomeChild from '../components/SomeChild';
-import useLocalStorage from '../components/UseLocalStorage';
+import UseLocalStorage from '../components/UseLocalStorage';
 
 // *useReducerの第一引数で使用するreducer
 const reducer = (state, action) => {
@@ -62,7 +62,7 @@ const EightHooks = () => {
   }, [counter]);
 
   //*カスタムフック
-  const [age, setAge] = useLocalStorage('age', 37);
+  const [age, setAge] = UseLocalStorage('age', 37);
   const [tempAge, setTempAge] = useState(age);
   const inputAge = (e) => {
     setTempAge(e.target.value);
